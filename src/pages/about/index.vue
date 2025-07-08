@@ -10,5 +10,13 @@
 </template>
 
 <script setup>
-import tailwindConfig from "#tailwind-config";
+// import tailwindConfig from "#tailwind-config";
+import { ref, onMounted } from 'vue'
+
+const tailwindConfig = ref({})
+
+onMounted(async () => {
+  const res = await fetch('/tailwind.config.ts')
+  tailwindConfig.value = await res.json()
+})
 </script>

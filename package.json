@@ -11,6 +11,10 @@
   },
   "dependencies": {
     "@clerk/nuxt": "^1.7.5",
+    "@nuxt/content": "^3.6.3",
+    "@nuxt/image": "^1.10.0",
+    "@nuxt/ui": "^3.2.0",
+    "better-sqlite3": "^12.2.0",
     "nuxt": "^3.17.6",
     "vue": "^3.5.17",
     "vue-router": "^4.5.1"
@@ -18,12 +22,15 @@
   "devDependencies": {
     "@nuxtjs/color-mode": "^3.5.2",
     "@nuxtjs/tailwindcss": "^6.14.0",
+    "@tailwindcss/postcss": "^4.1.11",
     "@tailwindcss/typography": "^0.5.16",
     "autoprefixer": "^10.4.21",
     "cssnano": "^7.0.7",
     "postcss-color-gray": "^5.0.0",
     "postcss-import": "^16.1.1",
     "postcss-nesting": "^13.0.2",
-    "postcss-preset-env": "^10.2.4"
+    "postcss-preset-env": "^10.2.4",
+    "typescript": "^5.8.3",
+    "vue-tsc": "^3.0.1"
   }
 }
