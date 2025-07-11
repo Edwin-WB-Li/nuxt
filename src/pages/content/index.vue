@@ -1,16 +1,15 @@
-<!-- <script setup lang="ts">
-
-import { queryCollection } from '@nuxt/content/nitro';
-
-const { data: home } = await useAsyncData(() => queryCollection('content').path('/').first())
-
-useSeoMeta({
-  title: home.value?.title,
-  description: home.value?.description
-})
-</script>
-
 <template>
-  <ContentRenderer v-if="home" :value="home" />
-  <div v-else>Home not found</div>
-</template> -->
+  <!-- Add an animated fade and zoom entrance -->
+  <div class="animate-in fade-in zoom-in">...</div>
+
+  <!-- Add an animated slide to top-left exit -->
+  <div class="animate-out slide-out-to-top slide-out-to-left">...</div>
+
+  <!-- Control animation duration -->
+  <div class="... duration-300">...</div>
+
+  <!-- Control animation delay -->
+  <div class="... delay-150">...</div>
+
+  <!-- And so much more! -->
+</template>

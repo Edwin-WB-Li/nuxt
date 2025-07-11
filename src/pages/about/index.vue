@@ -5,18 +5,18 @@
       <NuxtLink to="/" class="text-blue-500 underline">Home page</NuxtLink>
     </p>
     <h3 class="text-3xl mt-2">Tailwind config:</h3>
-    <pre class="bg-gray-200 p-3 rounded">{{ tailwindConfig }}</pre>
+    <!-- <pre class="bg-gray-200 p-3 rounded">{{ tailwindConfig }}</pre> -->
   </div>
 </template>
 
 <script setup>
 // import tailwindConfig from "#tailwind-config";
-import { ref, onMounted } from 'vue'
+// import { ref, onMounted } from "vue";
 
-const tailwindConfig = ref({})
+// const tailwindConfig = ref({})
 
-onMounted(async () => {
-  const res = await fetch('/tailwind.config.ts')
-  tailwindConfig.value = await res.json()
-})
+// onMounted(async () => {
+//   const res = await fetch('/tailwind.config.ts')
+//   tailwindConfig.value = await res.json()
+// })
 </script>
