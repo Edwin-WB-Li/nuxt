@@ -62,7 +62,7 @@
             height="88"
             class="flex-none rounded-lg bg-slate-100"
             loading="lazy"
-          />
+          >
           <div class="min-w-0 flex-auto space-y-1 font-semibold">
             <p class="text-cyan-500 dark:text-cyan-400 text-sm leading-6">
               <abbr title="Episode">Ep.</abbr> 128
