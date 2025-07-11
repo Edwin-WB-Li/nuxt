@@ -1,30 +1,31 @@
-import { defineNuxtConfig } from "nuxt/config";
-import tailwindcss from "@tailwindcss/vite";
+import { defineNuxtConfig } from 'nuxt/config'
+import tailwindcss from '@tailwindcss/vite'
 
 export default defineNuxtConfig({
-  compatibilityDate: "2025-07-09",
-  srcDir: "src",
+  compatibilityDate: '2025-07-09',
+  srcDir: 'src',
   typescript: {
     typeCheck: true,
   },
   modules: [
-    "@nuxt/eslint",
-    "@nuxt/ui",
-    "@clerk/nuxt",
-    "@nuxt/image",
+    '@nuxt/eslint',
+    '@nuxt/ui',
+    '@clerk/nuxt',
+    '@nuxt/image',
     // "@nuxt/content", // Nuxt Content 模块，用于处理内容
     // "@nuxtjs/color-mode",
     // "@nuxtjs/tailwindcss",
   ],
-  plugins: ["@/plugins/nprogress.client.ts"],
+  plugins: ['@/plugins/nprogress.client.ts'],
+  serverDir: '@/server',
   clerk: {
     skipServerMiddleware: true,
   },
-  css: ["~/assets/css/main.css"],
+  css: ['~/assets/css/main.css'],
   vite: {
     plugins: [tailwindcss()],
     optimizeDeps: {
-      exclude: ["clsx", "tailwind-merge"], // 避免 Vite 预构建问题
+      exclude: ['clsx', 'tailwind-merge'], // 避免 Vite 预构建问题
     },
   },
   ui: {
@@ -37,17 +38,17 @@ export default defineNuxtConfig({
     // 这里的 presets 配置可以根据需要添加或修改
     presets: [
       {
-        from: "vue-i18n",
-        imports: ["useI18n"],
+        from: 'vue-i18n',
+        imports: ['useI18n'],
       },
     ],
   },
   // 基于组件名称而非路径进行自动导入
   components: [
     {
-      path: "@/components",
+      path: '@/components',
       pathPrefix: false,
-      extensions: [".vue", ".tsx"],
+      extensions: ['.vue', '.tsx'],
     },
   ],
   // tailwindcss: {
@@ -64,4 +65,4 @@ export default defineNuxtConfig({
   //   },
   // },
   // tailwindcss: { exposeConfig: true }, // 允许在运行时获取 Tailwind 配置
-});
+})

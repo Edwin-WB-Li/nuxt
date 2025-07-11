@@ -2,57 +2,70 @@
   <div>
     <div>
       <div class="grid grid-cols-10 gap-2">
-        <div class="bg-sky-50 aspect-square" />
-        <div class="bg-sky-100 aspect-square" />
-        <div class="bg-sky-200 aspect-square" />
-        <div class="bg-sky-300 aspect-square" />
-        <div class="bg-sky-400 aspect-square" />
-        <div class="bg-sky-500 aspect-square" />
-        <div class="bg-sky-600 aspect-square" />
-        <div class="bg-sky-700 aspect-square" />
-        <div class="bg-sky-800 aspect-square" />
-        <div class="bg-sky-900 aspect-square" />
+        <div class="aspect-square bg-sky-50" />
+        <div class="aspect-square bg-sky-100" />
+        <div class="aspect-square bg-sky-200" />
+        <div class="aspect-square bg-sky-300" />
+        <div class="aspect-square bg-sky-400" />
+        <div class="aspect-square bg-sky-500" />
+        <div class="aspect-square bg-sky-600" />
+        <div class="aspect-square bg-sky-700" />
+        <div class="aspect-square bg-sky-800" />
+        <div class="aspect-square bg-sky-900" />
       </div>
       <div class="grid grid-cols-10 gap-2">
-        <div class="bg-blue-50 aspect-square" />
-        <div class="bg-blue-100 aspect-square" />
-        <div class="bg-blue-200 aspect-square" />
-        <div class="bg-blue-300 aspect-square" />
-        <div class="bg-blue-400 aspect-square" />
-        <div class="bg-blue-500 aspect-square" />
-        <div class="bg-blue-600 aspect-square" />
-        <div class="bg-blue-700 aspect-square" />
-        <div class="bg-blue-800 aspect-square" />
-        <div class="bg-blue-900 aspect-square" />
+        <div class="aspect-square bg-blue-50" />
+        <div class="aspect-square bg-blue-100" />
+        <div class="aspect-square bg-blue-200" />
+        <div class="aspect-square bg-blue-300" />
+        <div class="aspect-square bg-blue-400" />
+        <div class="aspect-square bg-blue-500" />
+        <div class="aspect-square bg-blue-600" />
+        <div class="aspect-square bg-blue-700" />
+        <div class="aspect-square bg-blue-800" />
+        <div class="aspect-square bg-blue-900" />
       </div>
       <div class="grid grid-cols-10 gap-2">
-        <div class="bg-indigo-50 aspect-square" />
-        <div class="bg-indigo-100 aspect-square" />
-        <div class="bg-indigo-200 aspect-square" />
-        <div class="bg-indigo-300 aspect-square" />
-        <div class="bg-indigo-400 aspect-square" />
-        <div class="bg-indigo-500 aspect-square" />
-        <div class="bg-indigo-600 aspect-square" />
-        <div class="bg-indigo-700 aspect-square" />
-        <div class="bg-indigo-800 aspect-square" />
-        <div class="bg-indigo-900 aspect-square" />
+        <div class="aspect-square bg-indigo-50" />
+        <div class="aspect-square bg-indigo-100" />
+        <div class="aspect-square bg-indigo-200" />
+        <div class="aspect-square bg-indigo-300" />
+        <div class="aspect-square bg-indigo-400" />
+        <div class="aspect-square bg-indigo-500" />
+        <div class="aspect-square bg-indigo-600" />
+        <div class="aspect-square bg-indigo-700" />
+        <div class="aspect-square bg-indigo-800" />
+        <div class="aspect-square bg-indigo-900" />
       </div>
       <div class="grid grid-cols-10 gap-2">
-        <div class="bg-violet-50 aspect-square" />
-        <div class="bg-violet-100 aspect-square" />
-        <div class="bg-violet-200 aspect-square" />
-        <div class="bg-violet-300 aspect-square" />
-        <div class="bg-violet-400 aspect-square" />
-        <div class="bg-violet-500 aspect-square" />
-        <div class="bg-violet-600 aspect-square" />
-        <div class="bg-violet-700 aspect-square" />
-        <div class="bg-violet-800 aspect-square" />
-        <div class="bg-violet-900 aspect-square" />
+        <div class="aspect-square bg-violet-50" />
+        <div class="aspect-square bg-violet-100" />
+        <div class="aspect-square bg-violet-200" />
+        <div class="aspect-square bg-violet-300" />
+        <div class="aspect-square bg-violet-400" />
+        <div class="aspect-square bg-violet-500" />
+        <div class="aspect-square bg-violet-600" />
+        <div class="aspect-square bg-violet-700" />
+        <div class="aspect-square bg-violet-800" />
+        <div class="aspect-square bg-violet-900" />
       </div>
     </div>
+    <!-- <div>
+      <UCarousel
+        v-slot="{ item }"
+        loop
+        dots
+        arrows
+        auto-scroll
+        :items="items"
+        :ui="{ item: 'basis-1/3' }"
+      >
+        <img :src="item" width="234" height="234" class="rounded-lg" />
+      </UCarousel>
+    </div> -->
     <div>
       <div
-        class="bg-white border-slate-100 dark:bg-slate-800 dark:border-slate-500 border-b rounded-t-xl p-4 pb-6 sm:p-10 sm:pb-8 lg:p-6 xl:p-10 xl:pb-8 space-y-6 sm:space-y-8 lg:space-y-6 xl:space-y-8"
+        class="space-y-6 rounded-t-xl border-b border-slate-100 bg-white p-4 pb-6 sm:space-y-8 sm:p-10 sm:pb-8 lg:space-y-6 lg:p-6 xl:space-y-8 xl:p-10 xl:pb-8 dark:border-slate-500 dark:bg-slate-800"
       >
         <div class="flex items-center space-x-4">
           <img
@@ -62,28 +75,22 @@
             height="88"
             class="flex-none rounded-lg bg-slate-100"
             loading="lazy"
-          >
+          />
           <div class="min-w-0 flex-auto space-y-1 font-semibold">
-            <p class="text-cyan-500 dark:text-cyan-400 text-sm leading-6">
+            <p class="text-sm leading-6 text-cyan-500 dark:text-cyan-400">
               <abbr title="Episode">Ep.</abbr> 128
             </p>
-            <h2
-              class="text-slate-500 dark:text-slate-400 text-sm leading-6 truncate"
-            >
+            <h2 class="truncate text-sm leading-6 text-slate-500 dark:text-slate-400">
               Scaling CSS at Heroku with Utility Classes
             </h2>
-            <p class="text-slate-900 dark:text-slate-50 text-lg">
-              Full Stack Radio
-            </p>
+            <p class="text-lg text-slate-900 dark:text-slate-50">Full Stack Radio</p>
           </div>
         </div>
         <div class="space-y-2">
           <div class="relative">
-            <div
-              class="bg-slate-100 dark:bg-slate-700 rounded-full overflow-hidden"
-            >
+            <div class="overflow-hidden rounded-full bg-slate-100 dark:bg-slate-700">
               <div
-                class="bg-cyan-500 dark:bg-cyan-400 w-1/2 h-2"
+                class="h-2 w-1/2 bg-cyan-500 dark:bg-cyan-400"
                 role="progressbar"
                 aria-label="music progress"
                 aria-valuenow="1456"
@@ -92,25 +99,23 @@
               />
             </div>
             <div
-              class="ring-cyan-500 dark:ring-cyan-400 ring-2 absolute left-1/2 top-1/2 w-4 h-4 -mt-2 -ml-2 flex items-center justify-center bg-white rounded-full shadow"
+              class="absolute top-1/2 left-1/2 -mt-2 -ml-2 flex h-4 w-4 items-center justify-center rounded-full bg-white shadow ring-2 ring-cyan-500 dark:ring-cyan-400"
             >
               <div
-                class="w-1.5 h-1.5 bg-cyan-500 dark:bg-cyan-400 rounded-full ring-1 ring-inset ring-slate-900/5"
+                class="h-1.5 w-1.5 rounded-full bg-cyan-500 ring-1 ring-slate-900/5 ring-inset dark:bg-cyan-400"
               />
             </div>
           </div>
-          <div
-            class="flex justify-between text-sm leading-6 font-medium tabular-nums"
-          >
+          <div class="flex justify-between text-sm leading-6 font-medium tabular-nums">
             <div class="text-cyan-500 dark:text-slate-100">24:16</div>
             <div class="text-slate-500 dark:text-slate-400">75:50</div>
           </div>
         </div>
       </div>
       <div
-        class="bg-slate-50 text-slate-500 dark:bg-slate-600 dark:text-slate-200 rounded-b-xl flex items-center"
+        class="flex items-center rounded-b-xl bg-slate-50 text-slate-500 dark:bg-slate-600 dark:text-slate-200"
       >
-        <div class="flex-auto flex items-center justify-evenly">
+        <div class="flex flex-auto items-center justify-evenly">
           <button type="button" aria-label="Add to favorites">
             <svg width="24" height="24">
               <path
@@ -123,11 +128,7 @@
               />
             </svg>
           </button>
-          <button
-            type="button"
-            class="hidden sm:block lg:hidden xl:block"
-            aria-label="Previous"
-          >
+          <button type="button" class="hidden sm:block lg:hidden xl:block" aria-label="Previous">
             <svg width="24" height="24" fill="none">
               <path
                 d="m10 12 8-6v12l-8-6Z"
@@ -167,7 +168,7 @@
         </div>
         <button
           type="button"
-          class="bg-white text-slate-900 dark:bg-slate-100 dark:text-slate-700 flex-none -my-2 mx-auto w-20 h-20 rounded-full ring-1 ring-slate-900/5 shadow-md flex items-center justify-center"
+          class="mx-auto -my-2 flex h-20 w-20 flex-none items-center justify-center rounded-full bg-white text-slate-900 shadow-md ring-1 ring-slate-900/5 dark:bg-slate-100 dark:text-slate-700"
           aria-label="Pause"
         >
           <svg width="30" height="32" fill="currentColor">
@@ -175,7 +176,7 @@
             <rect x="20" y="4" width="4" height="24" rx="2" />
           </svg>
         </button>
-        <div class="flex-auto flex items-center justify-evenly">
+        <div class="flex flex-auto items-center justify-evenly">
           <button type="button" aria-label="Skip 10 seconds">
             <svg width="24" height="24" fill="none">
               <path
@@ -194,11 +195,7 @@
               />
             </svg>
           </button>
-          <button
-            type="button"
-            class="hidden sm:block lg:hidden xl:block"
-            aria-label="Next"
-          >
+          <button type="button" class="hidden sm:block lg:hidden xl:block" aria-label="Next">
             <svg width="24" height="24" fill="none">
               <path
                 d="M14 12 6 6v12l8-6Z"
@@ -219,7 +216,7 @@
           </button>
           <button
             type="button"
-            class="rounded-lg text-xs leading-6 font-semibold px-2 ring-2 ring-inset ring-slate-500 text-slate-500 dark:text-slate-100 dark:ring-0 dark:bg-slate-500"
+            class="rounded-lg px-2 text-xs leading-6 font-semibold text-slate-500 ring-2 ring-slate-500 ring-inset dark:bg-slate-500 dark:text-slate-100 dark:ring-0"
           >
             1x
           </button>
@@ -228,8 +225,17 @@
     </div>
   </div>
 </template>
-<script>
-export default {
-  name: "HomePage",
-};
+<script setup lang="ts">
+// const items = [
+//   "https://picsum.photos/640/640?random=1",
+//   "https://picsum.photos/640/640?random=3",
+//   "https://picsum.photos/640/640?random=1",
+//   "https://picsum.photos/640/640?random=4",
+//   "https://picsum.photos/640/640?random=3",
+//   "https://picsum.photos/640/640?random=6",
+//   "https://picsum.photos/640/640?random=4",
+//   "https://picsum.photos/640/640?random=6",
+//   "https://picsum.photos/640/640?random=4",
+//   "https://picsum.photos/640/640?random=6",
+// ];
 </script>

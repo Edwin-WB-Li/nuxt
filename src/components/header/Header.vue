@@ -1,8 +1,8 @@
 <template>
-  <div class="w-full flex justify-around items-center">
+  <div class="flex w-full items-center justify-between">
     <NuxtLink to="/">
       <svg
-        class="text-highlighted block w-auto h-6"
+        class="text-highlighted block h-6 w-auto"
         width="800"
         height="200"
         viewBox="0 0 800 200"
@@ -39,8 +39,8 @@
 </template>
 
 <script setup lang="ts">
-import SignInPage from "@/pages/signin/index.vue";
+import SignInPage from '@/components/userSignin/UserSignin.vue'
 defineOptions({
-  name: "AppHeader", // 或 TheHeader
-});
+  name: 'AppHeader', // 或 TheHeader
+})
 </script>

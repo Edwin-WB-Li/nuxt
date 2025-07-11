@@ -6,8 +6,8 @@ export default defineContentConfig({
       type: 'page',
       source: 'blog/*.md',
       schema: z.object({
-        date: z.string()
-      })
-    })
-  }
+        date: z.string(),
+      }),
+    }),
+  },
 })

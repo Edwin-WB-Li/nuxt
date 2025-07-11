@@ -6,8 +6,8 @@
   "editor.quickSuggestions": {
     "strings": "on"
   },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
   "tailwindCSS.classAttributes": ["class", "ui"],
-  "tailwindCSS.experimental.classRegex": [
-    ["ui:\\s*{([^)]*)\\s*}", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
-  ]
+  "tailwindCSS.experimental.classRegex": [["ui:\\s*{([^)]*)\\s*}", "(?:'|\"|`)([^']*)(?:'|\"|`)"]]
 }

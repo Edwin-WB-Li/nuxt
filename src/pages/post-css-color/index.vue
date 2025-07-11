@@ -1,7 +1,6 @@
 <template>
   <div class="test">
-    PostCSS <span class="test_gray">Color Gray</span> is
-    <span class="test_working">working</span>!
+    PostCSS <span class="test_gray">Color Gray</span> is <span class="test_working">working</span>!
     <NuxtLink to="/about" class="text-blue-500 underline">About page</NuxtLink>
   </div>
 </template>

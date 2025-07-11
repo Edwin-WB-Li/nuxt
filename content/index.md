@@ -17,5 +17,5 @@ Here is some content.
       componentIslands: true
     }
   })
-  
+
 ```

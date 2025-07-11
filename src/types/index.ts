@@ -1,7 +1,7 @@
 interface NavConfigType {
-  name: string;
-  icon?: string;
-  path: string;
+  name: string
+  icon?: string
+  path: string
 }
 
-export type { NavConfigType };
+export type { NavConfigType }

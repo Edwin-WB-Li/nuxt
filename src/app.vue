@@ -9,5 +9,5 @@
 </template>
 
 <script setup lang="ts">
-import 'normalize.css';
+import 'normalize.css'
 </script>
