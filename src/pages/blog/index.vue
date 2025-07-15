@@ -1,5 +1,11 @@
 <template>
-  <div class="p-4">
-    <h1 class="text-5xl">blog page</h1>
-  </div>
+	<div>
+		<UButton v-for="locale in locales" :key="locale.code" @click="setLocale(locale.code)">
+			{{ locale.name }}
+		</UButton>
+	</div>
 </template>
+<script setup lang="ts">
+const { locales, setLocale } = useI18n()
+console.log(locales)
+</script>

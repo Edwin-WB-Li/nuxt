@@ -1,3 +1,46 @@
 @import 'tailwindcss';
 @import '@nuxt/ui';
 @import 'tw-animate-css';
+
+/* 定义主题变量 */
+@theme {
+	--color-background: var(--bg);
+	--color-text: var(--text);
+	--color-primary: var(--primary);
+}
+
+/* 亮色主题 */
+:root,
+.light {
+	--bg: #ffffff;
+	--text: #000000;
+	--primary: #3b82f6;
+}
+
+/* 暗色主题 */
+.dark {
+	--bg: #121212;
+	--text: #ffffff;
+	--primary: #60a5fa;
+}
+
+/* 自定义蓝色主题 */
+.blue-theme {
+	--bg: #e3f2fd;
+	--text: #0d47a1;
+	--primary: #2196f3;
+}
+
+/* 应用变量到 Tailwind */
+@layer base {
+	body {
+		background-color: var(--color-background);
+		color: var(--color-text);
+		transition:
+			background-color 0.3s,
+			color 0.3s; /* 平滑过渡 */
+	}
+	.btn-primary {
+		@apply rounded bg-[var(--color-primary)] px-4 py-2 text-white;
+	}
+}

@@ -1,13 +1,16 @@
 {
-  "files.associations": {
-    "*.css": "tailwindcss"
-  },
-  "eslint.useFlatConfig": true,
-  "editor.quickSuggestions": {
-    "strings": "on"
-  },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "tailwindCSS.classAttributes": ["class", "ui"],
-  "tailwindCSS.experimental.classRegex": [["ui:\\s*{([^)]*)\\s*}", "(?:'|\"|`)([^']*)(?:'|\"|`)"]]
+	"files.associations": {
+		"*.css": "tailwindcss"
+	},
+	"eslint.useFlatConfig": true,
+	"editor.quickSuggestions": {
+		"strings": "on"
+	},
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"tailwindCSS.classAttributes": ["class", "ui"],
+	"tailwindCSS.experimental.classRegex": [["ui:\\s*{([^)]*)\\s*}", "(?:'|\"|`)([^']*)(?:'|\"|`)"]],
+	"i18n-ally.localesPaths": ["../src/i18n/locales"],
+	"i18n-ally.keystyle": "nested",
+	"i18n-ally.displayLanguage": "en"
 }

@@ -1,11 +1,9 @@
 <template>
-  <Suspense>
-    <UApp>
-      <NuxtLayout>
-        <NuxtPage />
-      </NuxtLayout>
-    </UApp>
-  </Suspense>
+	<UApp :toaster="{ position: 'top-center' }">
+		<NuxtLayout>
+			<NuxtPage />
+		</NuxtLayout>
+	</UApp>
 </template>
 
 <script setup lang="ts">
