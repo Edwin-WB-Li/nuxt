@@ -1,22 +1,13 @@
 <template>
-  <div class="p-4">
-    <h1 class="text-5xl">About page</h1>
-    <p>
-      <NuxtLink to="/" class="text-blue-500 underline">Home page</NuxtLink>
-    </p>
-    <h3 class="mt-2 text-3xl">Tailwind config:</h3>
-    <!-- <pre class="bg-gray-200 p-3 rounded">{{ tailwindConfig }}</pre> -->
-  </div>
+	<div class="relative h-96 w-full">
+		<SnowfallBg
+			color="ADD8E6"
+			class="absolute inset-0"
+			:min-radius="0.2"
+			:max-radius="5"
+			:speed="0.5"
+		/>
+	</div>
 </template>
 
-<script setup>
-// import tailwindConfig from "#tailwind-config";
-// import { ref, onMounted } from "vue";
-
-// const tailwindConfig = ref({})
-
-// onMounted(async () => {
-//   const res = await fetch('/tailwind.config.ts')
-//   tailwindConfig.value = await res.json()
-// })
-</script>
+<script setup></script>

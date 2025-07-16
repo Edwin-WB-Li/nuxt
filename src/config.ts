@@ -39,4 +39,31 @@ const nav = ref<NavConfigType[]>([
 	},
 ])
 
-export { navConfig, nav }
+const photoGalleryItems = ref([
+	{
+		src: 'https://raw.githubusercontent.com/Edwin-WB-Li/static/master/images/scenery/2.jpg',
+	},
+	{
+		src: 'https://raw.githubusercontent.com/Edwin-WB-Li/static/master/images/scenery/1.jpg',
+	},
+	{
+		src: 'https://raw.githubusercontent.com/Edwin-WB-Li/static/master/images/scenery/3.jpg',
+	},
+	{
+		src: 'https://raw.githubusercontent.com/Edwin-WB-Li/static/master/images/scenery/4.jpg',
+	},
+	{
+		src: 'https://raw.githubusercontent.com/Edwin-WB-Li/static/master/images/scenery/6.jpg',
+	},
+	{
+		src: 'https://raw.githubusercontent.com/Edwin-WB-Li/static/master/images/scenery/5.jpg',
+	},
+	{
+		src: 'https://raw.githubusercontent.com/Edwin-WB-Li/static/master/images/scenery/7.jpg',
+	},
+	{
+		src: 'https://raw.githubusercontent.com/Edwin-WB-Li/static/master/images/scenery/9.jpg',
+	},
+])
+
+export { navConfig, nav, photoGalleryItems }
