@@ -44,14 +44,15 @@ export default defineNuxtConfig({
 	// },
 	// },
 	umami: {
+		// https://umami.nuxt.dev/getting-started/introduction
 		id: '7e8c67ee-760d-4f16-a4c1-12f9ac0452f4',
 		host: 'https://cloud.umami.is',
 		autoTrack: true,
 		// proxy: 'cloak',
-		// useDirective: true,
-		// ignoreLocalhost: true,
+		useDirective: true,
+		domains: ['nuxt-blog.weiibn.shop'],
+		ignoreLocalhost: true,
 		// excludeQueryParams: false,
-		// domains: ['nuxt-blog.weiibn.shop'],
 		// customEndpoint: '/my-custom-endpoint',
 		// enabled: false,
 		// logErrors: true,
