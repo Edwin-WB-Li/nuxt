@@ -1,235 +1,193 @@
 <template>
-  <div>
-    <div>
-      <div class="grid grid-cols-10 gap-2">
-        <div class="bg-sky-50 aspect-square" />
-        <div class="bg-sky-100 aspect-square" />
-        <div class="bg-sky-200 aspect-square" />
-        <div class="bg-sky-300 aspect-square" />
-        <div class="bg-sky-400 aspect-square" />
-        <div class="bg-sky-500 aspect-square" />
-        <div class="bg-sky-600 aspect-square" />
-        <div class="bg-sky-700 aspect-square" />
-        <div class="bg-sky-800 aspect-square" />
-        <div class="bg-sky-900 aspect-square" />
-      </div>
-      <div class="grid grid-cols-10 gap-2">
-        <div class="bg-blue-50 aspect-square" />
-        <div class="bg-blue-100 aspect-square" />
-        <div class="bg-blue-200 aspect-square" />
-        <div class="bg-blue-300 aspect-square" />
-        <div class="bg-blue-400 aspect-square" />
-        <div class="bg-blue-500 aspect-square" />
-        <div class="bg-blue-600 aspect-square" />
-        <div class="bg-blue-700 aspect-square" />
-        <div class="bg-blue-800 aspect-square" />
-        <div class="bg-blue-900 aspect-square" />
-      </div>
-      <div class="grid grid-cols-10 gap-2">
-        <div class="bg-indigo-50 aspect-square" />
-        <div class="bg-indigo-100 aspect-square" />
-        <div class="bg-indigo-200 aspect-square" />
-        <div class="bg-indigo-300 aspect-square" />
-        <div class="bg-indigo-400 aspect-square" />
-        <div class="bg-indigo-500 aspect-square" />
-        <div class="bg-indigo-600 aspect-square" />
-        <div class="bg-indigo-700 aspect-square" />
-        <div class="bg-indigo-800 aspect-square" />
-        <div class="bg-indigo-900 aspect-square" />
-      </div>
-      <div class="grid grid-cols-10 gap-2">
-        <div class="bg-violet-50 aspect-square" />
-        <div class="bg-violet-100 aspect-square" />
-        <div class="bg-violet-200 aspect-square" />
-        <div class="bg-violet-300 aspect-square" />
-        <div class="bg-violet-400 aspect-square" />
-        <div class="bg-violet-500 aspect-square" />
-        <div class="bg-violet-600 aspect-square" />
-        <div class="bg-violet-700 aspect-square" />
-        <div class="bg-violet-800 aspect-square" />
-        <div class="bg-violet-900 aspect-square" />
-      </div>
-    </div>
-    <div>
-      <div
-        class="bg-white border-slate-100 dark:bg-slate-800 dark:border-slate-500 border-b rounded-t-xl p-4 pb-6 sm:p-10 sm:pb-8 lg:p-6 xl:p-10 xl:pb-8 space-y-6 sm:space-y-8 lg:space-y-6 xl:space-y-8"
-      >
-        <div class="flex items-center space-x-4">
-          <img
-            src="https://www.tailwindcss.cn/_next/static/media/full-stack-radio.afb14e4e.png"
-            alt=""
-            width="88"
-            height="88"
-            class="flex-none rounded-lg bg-slate-100"
-            loading="lazy"
-          />
-          <div class="min-w-0 flex-auto space-y-1 font-semibold">
-            <p class="text-cyan-500 dark:text-cyan-400 text-sm leading-6">
-              <abbr title="Episode">Ep.</abbr> 128
-            </p>
-            <h2
-              class="text-slate-500 dark:text-slate-400 text-sm leading-6 truncate"
-            >
-              Scaling CSS at Heroku with Utility Classes
-            </h2>
-            <p class="text-slate-900 dark:text-slate-50 text-lg">
-              Full Stack Radio
-            </p>
-          </div>
-        </div>
-        <div class="space-y-2">
-          <div class="relative">
-            <div
-              class="bg-slate-100 dark:bg-slate-700 rounded-full overflow-hidden"
-            >
-              <div
-                class="bg-cyan-500 dark:bg-cyan-400 w-1/2 h-2"
-                role="progressbar"
-                aria-label="music progress"
-                aria-valuenow="1456"
-                aria-valuemin="0"
-                aria-valuemax="4550"
-              />
-            </div>
-            <div
-              class="ring-cyan-500 dark:ring-cyan-400 ring-2 absolute left-1/2 top-1/2 w-4 h-4 -mt-2 -ml-2 flex items-center justify-center bg-white rounded-full shadow"
-            >
-              <div
-                class="w-1.5 h-1.5 bg-cyan-500 dark:bg-cyan-400 rounded-full ring-1 ring-inset ring-slate-900/5"
-              />
-            </div>
-          </div>
-          <div
-            class="flex justify-between text-sm leading-6 font-medium tabular-nums"
-          >
-            <div class="text-cyan-500 dark:text-slate-100">24:16</div>
-            <div class="text-slate-500 dark:text-slate-400">75:50</div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="bg-slate-50 text-slate-500 dark:bg-slate-600 dark:text-slate-200 rounded-b-xl flex items-center"
-      >
-        <div class="flex-auto flex items-center justify-evenly">
-          <button type="button" aria-label="Add to favorites">
-            <svg width="24" height="24">
-              <path
-                d="M7 6.931C7 5.865 7.853 5 8.905 5h6.19C16.147 5 17 5.865 17 6.931V19l-5-4-5 4V6.931Z"
-                fill="currentColor"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </button>
-          <button
-            type="button"
-            class="hidden sm:block lg:hidden xl:block"
-            aria-label="Previous"
-          >
-            <svg width="24" height="24" fill="none">
-              <path
-                d="m10 12 8-6v12l-8-6Z"
-                fill="currentColor"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M6 6v12"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </button>
-          <button type="button" aria-label="Rewind 10 seconds">
-            <svg width="24" height="24" fill="none">
-              <path
-                d="M6.492 16.95c2.861 2.733 7.5 2.733 10.362 0 2.861-2.734 2.861-7.166 0-9.9-2.862-2.733-7.501-2.733-10.362 0A7.096 7.096 0 0 0 5.5 8.226"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M5 5v3.111c0 .491.398.889.889.889H9"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </button>
-        </div>
-        <button
-          type="button"
-          class="bg-white text-slate-900 dark:bg-slate-100 dark:text-slate-700 flex-none -my-2 mx-auto w-20 h-20 rounded-full ring-1 ring-slate-900/5 shadow-md flex items-center justify-center"
-          aria-label="Pause"
-        >
-          <svg width="30" height="32" fill="currentColor">
-            <rect x="6" y="4" width="4" height="24" rx="2" />
-            <rect x="20" y="4" width="4" height="24" rx="2" />
-          </svg>
-        </button>
-        <div class="flex-auto flex items-center justify-evenly">
-          <button type="button" aria-label="Skip 10 seconds">
-            <svg width="24" height="24" fill="none">
-              <path
-                d="M17.509 16.95c-2.862 2.733-7.501 2.733-10.363 0-2.861-2.734-2.861-7.166 0-9.9 2.862-2.733 7.501-2.733 10.363 0 .38.365.711.759.991 1.176"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M19 5v3.111c0 .491-.398.889-.889.889H15"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </button>
-          <button
-            type="button"
-            class="hidden sm:block lg:hidden xl:block"
-            aria-label="Next"
-          >
-            <svg width="24" height="24" fill="none">
-              <path
-                d="M14 12 6 6v12l8-6Z"
-                fill="currentColor"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M18 6v12"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </button>
-          <button
-            type="button"
-            class="rounded-lg text-xs leading-6 font-semibold px-2 ring-2 ring-inset ring-slate-500 text-slate-500 dark:text-slate-100 dark:ring-0 dark:bg-slate-500"
-          >
-            1x
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
+	<div class="w-full">
+		<div>
+			<ClientOnly>
+				<BlurReveal :delay="0.2" :duration="0.75" class="pb-4">
+					<div class="flex items-center justify-center">
+						<UAvatar :src="logoUrl" size="3xl" />
+					</div>
+					<CustomTags />
+					<div class="flex items-center justify-center">
+						<SparklesText
+							text="🎉 你好, 欢迎光临我的博客✨, 我是 Edwin WB Li, 目前在深圳从事 web前端开发 👨‍💻"
+							:colors="{ first: '#9E7AFF', second: '#FE8BBB' }"
+							:sparkles-count="10"
+							class="my-4 text-lg font-normal"
+						/>
+					</div>
+					<div class="flex items-center justify-center">
+						<PhotoGallery :items="items" />
+					</div>
+				</BlurReveal>
+			</ClientOnly>
+		</div>
+		<div class="flex items-center justify-center">
+			<ExpandableGallery :images="images" class="p-4" />
+		</div>
+		<div
+			class="bg-background relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border md:shadow-xl"
+		>
+			<!-- First Marquee -->
+			<MarqueeComponent pause-on-hover class="[--duration:20s]">
+				<ReviewCard
+					v-for="review in firstRow"
+					:key="review.username"
+					:img="review.img"
+					:name="review.name"
+					:username="review.username"
+					:body="review.body"
+				/>
+			</MarqueeComponent>
+
+			<!-- Second Marquee (reverse) -->
+			<!-- <MarqueeComponent reverse pause-on-hover class="[--duration:20s]">
+				<ReviewCard
+					v-for="review in secondRow"
+					:key="review.username"
+					:img="review.img"
+					:name="review.name"
+					:username="review.username"
+					:body="review.body"
+				/>
+			</MarqueeComponent> -->
+
+			<!-- Left Gradient -->
+			<div
+				class="dark:from-background pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white"
+			/>
+
+			<!-- Right Gradient -->
+			<div
+				class="dark:from-background pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white"
+			/>
+		</div>
+		<div>
+			<AnimatedLogoCloud :logos title="learning resources" />
+		</div>
+		<div>
+			<ClientOnly>
+				<MorphingText :texts="texts" />
+			</ClientOnly>
+		</div>
+	</div>
 </template>
-<script>
-export default {
-  name: "HomePage",
-};
+<script setup lang="ts">
+// import { photoGalleryItems } from '@/config'
+const logoUrl = new URL('@/assets/images/wechat.jpg', import.meta.url).href
+const items = [
+	{
+		src: 'https://images.pexels.com/photos/16834200/pexels-photo-16834200/free-photo-of-young-brunette-in-a-white-dress-sitting-on-a-bench-and-holding-flowers.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+	},
+	{
+		src: 'https://images.pexels.com/photos/16834202/pexels-photo-16834202/free-photo-of-young-woman-in-a-white-dress-posing-outdoors.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+	},
+	{
+		src: 'https://images.pexels.com/photos/16834194/pexels-photo-16834194/free-photo-of-woman-in-white-dress-posing-with-red-flowers-on-lap.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+	},
+	{
+		src: 'https://images.pexels.com/photos/17362900/pexels-photo-17362900/free-photo-of-pretty-young-model-in-chinese-retro-dress.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+	},
+	{
+		src: 'https://images.pexels.com/photos/19447919/pexels-photo-19447919/free-photo-of-model-in-a-pink-ao-dai-dress-with-a-bouquet-of-tulips-by-the-river.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+	},
+	{
+		src: 'https://images.pexels.com/photos/20332975/pexels-photo-20332975/free-photo-of-young-woman-posing-in-a-silk-slip-dress.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+	},
+	{
+		src: 'https://images.pexels.com/photos/19732643/pexels-photo-19732643/free-photo-of-woman-in-white-dress-sitting-and-reading-book.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+	},
+	{
+		src: 'https://images.pexels.com/photos/17347482/pexels-photo-17347482/free-photo-of-woman-in-dress-posing-with-bag.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+	},
+]
+const images = [
+	'https://images.unsplash.com/photo-1709884735646-897b57461d61?q=80&w=3628&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+	'https://images.unsplash.com/photo-1541701494587-cb58502866ab?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+	'https://images.unsplash.com/photo-1527529482837-4698179dc6ce?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+	'https://images.unsplash.com/photo-1502085671122-2d218cd434e6?q=80&w=3626&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+]
+const reviews = [
+	{
+		name: 'Jack',
+		username: '@jack',
+		body: "I've never seen anything like this before. It's amazing. I love it.",
+		img: 'https://avatar.vercel.sh/jack',
+	},
+	{
+		name: 'Jill',
+		username: '@jill',
+		body: "I don't know what to say. I'm speechless. This is amazing.",
+		img: 'https://avatar.vercel.sh/jill',
+	},
+	{
+		name: 'John',
+		username: '@john',
+		body: "I'm at a loss for words. This is amazing. I love it.",
+		img: 'https://avatar.vercel.sh/john',
+	},
+	{
+		name: 'Jane',
+		username: '@jane',
+		body: "I'm at a loss for words. This is amazing. I love it.",
+		img: 'https://avatar.vercel.sh/jane',
+	},
+	{
+		name: 'Jenny',
+		username: '@jenny',
+		body: "I'm at a loss for words. This is amazing. I love it.",
+		img: 'https://avatar.vercel.sh/jenny',
+	},
+	{
+		name: 'James',
+		username: '@james',
+		body: "I'm at a loss for words. This is amazing. I love it.",
+		img: 'https://avatar.vercel.sh/james',
+	},
+]
+const logos = [
+	{
+		name: 'Vercel',
+		path: 'https://res.cloudinary.com/dfhp33ufc/image/upload/v1715881430/vercel_wordmark_dark_mhv8u8.svg',
+		link: 'https://vercel.com',
+	},
+	{
+		name: 'Prime',
+		path: 'https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276558/logos/t2awrrfzdvmg1chnzyfr.svg',
+		link: 'https://vercel.com',
+	},
+	{
+		name: 'Trustpilot',
+		path: 'https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276558/logos/tkfspxqmjflfllbuqxsi.svg',
+		link: 'https://vercel.com',
+	},
+	{
+		name: 'Webflow',
+		path: 'https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276560/logos/nymiivu48d5lywhf9rpf.svg',
+		link: 'https://vercel.com',
+	},
+	{
+		name: 'Airbnb',
+		path: 'https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276558/logos/pmblusboe7vkw8vxdknx.svg',
+		link: 'https://vercel.com',
+	},
+	{
+		name: 'Tina',
+		path: 'https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276560/logos/afqhiygywyphuou6xtxc.svg',
+		link: 'https://vercel.com',
+	},
+	{
+		name: 'Stackoverflow',
+		path: 'https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276558/logos/ts1j4mkooxqmscgptafa.svg',
+		link: 'https://vercel.com',
+	},
+	{
+		name: 'mistral',
+		path: 'https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276558/logos/tyos2ayezryjskox3wzs.svg',
+		link: 'https://vercel.com',
+	},
+]
+// Split reviews into two rows
+const firstRow = ref(reviews.slice(0, reviews.length / 2))
+// const secondRow = ref(reviews.slice(reviews.length / 2))
+const texts = ['vue', 'nuxt', 'vite', 'next ui', '@clerk/nuxt', 'motion-v', 'tailwindcss']
 </script>
