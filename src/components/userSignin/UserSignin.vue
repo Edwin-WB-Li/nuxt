@@ -1,15 +1,15 @@
 <template>
-  <header>
-    <SignedOut>
-      <SignInButton />
-    </SignedOut>
-    <SignedIn>
-      <UserButton />
-    </SignedIn>
-  </header>
+	<header>
+		<SignedOut>
+			<SignInButton class="cursor-pointer" />
+		</SignedOut>
+		<SignedIn>
+			<UserButton />
+		</SignedIn>
+	</header>
 </template>
 <script setup lang="ts">
 defineOptions({
-  name: 'UserSignin',
+	name: 'UserSignin',
 })
 </script>

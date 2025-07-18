@@ -1,14 +1,14 @@
 <template>
 	<nav
-		class="flex h-10 min-w-75 justify-center gap-6 rounded-3xl border border-solid border-black leading-10 font-medium text-zinc-500 dark:text-zinc-400"
+		class="flex h-10 min-w-60 items-center justify-center gap-6 rounded-3xl border border-solid leading-10 font-normal text-zinc-500 dark:border-white dark:text-zinc-400"
 	>
 		<NuxtLink
 			v-for="item in nav"
 			:key="item.path"
 			:to="localePath(item.path)"
 			:class="
-				cn('px-0.5 transition hover:text-lime-500 dark:hover:text-lime-400', {
-					'font-bold text-lime-500 dark:text-lime-400': currentPath === localePath(item.path),
+				cn('px-0.5 text-base transition hover:text-lime-400 dark:hover:text-lime-400', {
+					'font-bold text-lime-300 dark:text-lime-300': currentPath === localePath(item.path),
 				})
 			"
 		>

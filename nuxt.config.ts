@@ -1,6 +1,6 @@
 import { defineNuxtConfig } from 'nuxt/config'
 import tailwindcss from '@tailwindcss/vite'
-// import path from 'path'
+import svgLoader from 'vite-svg-loader'
 
 export default defineNuxtConfig({
 	compatibilityDate: '2025-07-09',
@@ -11,6 +11,7 @@ export default defineNuxtConfig({
 	modules: [
 		// '@nuxtjs/tailwindcss',
 		'@nuxt/eslint',
+		// 'nuxt-umami',
 		'@nuxt/ui',
 		'@clerk/nuxt',
 		'@nuxt/image',
@@ -18,7 +19,30 @@ export default defineNuxtConfig({
 		'@nuxtjs/color-mode',
 		// "@nuxt/content",
 	],
-	// darkMode: 'class',
+	// nitro: {
+	// devProxy: {
+	// 	'/apis': {
+	// 		target: 'https://api.daidr.me',
+	// 		changeOrigin: true,
+	// 	},
+	// },
+	// 开发环境代理
+	// devProxy: {
+	// 	'/apis': {
+	// 		target: 'https://api.daidr.me',
+	// 		changeOrigin: true,
+	// 		// 可选：重写路径（若接口路径需调整）
+	// 		// rewrite: path => path.replace(/^\/hitokoto/, ''),
+	// 	},
+	// },
+	// // 生产环境代理（推荐）
+	// routeRules: {
+	// 	'/hitokoto/**': {
+	// 		proxy: 'https://api.daidr.me/apis/**',
+	// 		ssr: false, // 禁用服务端渲染避免重复请求
+	// 	},
+	// },
+	// },
 	colorMode: {
 		// 根据系统设置自动切换
 		preference: 'light', // 可选 'light'/'dark'/'system'
@@ -30,8 +54,6 @@ export default defineNuxtConfig({
 	},
 	i18n: {
 		// langDir: path.resolve(__dirname, '/i18n/locales/'), // 动态解析路径,
-		// langDir: './i18n/locales/', // 动态解析路径,
-		// langDir: './src/i18n/locales/',
 		locales: [
 			{ code: 'en', name: 'English', file: 'en.json' },
 			{ code: 'zh', name: '简体中文', file: 'zh.json' },
@@ -54,7 +76,7 @@ export default defineNuxtConfig({
 	},
 	css: ['~/assets/css/main.css'],
 	vite: {
-		plugins: [tailwindcss()],
+		plugins: [tailwindcss(), svgLoader()],
 		optimizeDeps: {
 			exclude: ['clsx', 'tailwind-merge'], // 避免 Vite 预构建问题
 		},

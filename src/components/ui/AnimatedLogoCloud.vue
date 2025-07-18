@@ -14,13 +14,29 @@
 					:key="index"
 					class="animate-logo-cloud flex shrink-0 flex-row justify-around gap-6"
 				>
-					<img
-						v-for="(logo, key) in props.logos"
-						:key="key"
-						:src="logo.path"
-						:alt="logo.name"
-						class="h-10 w-28 px-2 brightness-0 dark:invert"
-					/>
+					<!-- <NuxtLink v-for="(logo, key) in props.logos" :key="key" :to="logo.link" target="_blank">
+						<img
+							:src="logo.path"
+							:alt="logo.name"
+							class="h-10 w-28 cursor-pointer px-2 brightness-0 dark:invert"
+						/>
+					</NuxtLink> -->
+					<template v-for="(logo, key) in props.logos" :key="key">
+						<NuxtLink v-if="logo.link" class="logo-cloud-item" :to="logo.link" target="_blank">
+							<img
+								:src="logo.path"
+								:alt="logo.name"
+								class="h-10 w-28 cursor-pointer px-2 brightness-0 dark:invert"
+							/>
+						</NuxtLink>
+						<img
+							v-else
+							:key="key"
+							:src="logo.path"
+							:alt="logo.name"
+							class="h-10 w-28 px-2 brightness-0 dark:invert"
+						/>
+					</template>
 				</div>
 			</div>
 		</div>
@@ -28,8 +44,8 @@
 </template>
 
 <script setup lang="ts">
-import { cn } from '@/utils'
 import type { AnimateLogoCloudProps } from '@/types'
+import { cn } from '@/utils'
 
 const props = defineProps<AnimateLogoCloudProps>()
 </script>

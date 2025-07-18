@@ -1,4 +1,5 @@
 import type { HTMLAttributes } from 'vue'
+
 interface NavConfigType {
 	name: string
 	icon?: string
@@ -8,6 +9,7 @@ interface NavConfigType {
 interface Logo {
 	name: string
 	path: string
+	link?: string
 }
 interface AnimateLogoCloudProps {
 	class?: string
@@ -29,4 +31,10 @@ interface IconCloudProps {
 	images?: string[]
 }
 
-export type { NavConfigType, AnimateLogoCloudProps, SphereIcon, IconCloudProps }
+interface HitokotoResponse {
+	type: string
+	content: string
+	from: string
+}
+
+export type { NavConfigType, AnimateLogoCloudProps, SphereIcon, IconCloudProps, HitokotoResponse }

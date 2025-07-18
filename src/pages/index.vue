@@ -1,19 +1,25 @@
 <template>
-	<div>
-		<div class="flex items-center justify-center">
+	<div class="w-full">
+		<div>
 			<ClientOnly>
-				<BlurReveal :delay="0.2" :duration="0.75" class="p-8">
-					<h2 class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-						Hey there 👋
-					</h2>
-					<span class="text-xl tracking-tighter text-pretty sm:text-3xl xl:text-4xl/none">
-						How is it going?
-					</span>
+				<BlurReveal :delay="0.2" :duration="0.75" class="pb-4">
+					<div class="flex items-center justify-center">
+						<UAvatar :src="logoUrl" size="3xl" />
+					</div>
+					<CustomTags />
+					<div class="flex items-center justify-center">
+						<SparklesText
+							text="🎉 你好, 欢迎光临我的博客✨, 我是 Edwin WB Li, 目前在深圳从事 web前端开发 👨‍💻"
+							:colors="{ first: '#9E7AFF', second: '#FE8BBB' }"
+							:sparkles-count="10"
+							class="my-4 text-lg font-normal"
+						/>
+					</div>
+					<div class="flex items-center justify-center">
+						<PhotoGallery :items="items" />
+					</div>
 				</BlurReveal>
 			</ClientOnly>
-		</div>
-		<div class="flex items-center justify-center">
-			<PhotoGallery :items="items" />
 		</div>
 		<div class="flex items-center justify-center">
 			<ExpandableGallery :images="images" class="p-4" />
@@ -56,7 +62,7 @@
 			/>
 		</div>
 		<div>
-			<AnimatedLogoCloud :logos title="Trusted by Companies like" />
+			<AnimatedLogoCloud :logos title="learning resources" />
 		</div>
 		<div>
 			<ClientOnly>
@@ -67,6 +73,7 @@
 </template>
 <script setup lang="ts">
 // import { photoGalleryItems } from '@/config'
+const logoUrl = new URL('@/assets/images/wechat.jpg', import.meta.url).href
 const items = [
 	{
 		src: 'https://images.pexels.com/photos/16834200/pexels-photo-16834200/free-photo-of-young-brunette-in-a-white-dress-sitting-on-a-bench-and-holding-flowers.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
@@ -141,48 +148,46 @@ const logos = [
 	{
 		name: 'Vercel',
 		path: 'https://res.cloudinary.com/dfhp33ufc/image/upload/v1715881430/vercel_wordmark_dark_mhv8u8.svg',
+		link: 'https://vercel.com',
 	},
 	{
 		name: 'Prime',
 		path: 'https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276558/logos/t2awrrfzdvmg1chnzyfr.svg',
+		link: 'https://vercel.com',
 	},
 	{
 		name: 'Trustpilot',
 		path: 'https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276558/logos/tkfspxqmjflfllbuqxsi.svg',
+		link: 'https://vercel.com',
 	},
 	{
 		name: 'Webflow',
 		path: 'https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276560/logos/nymiivu48d5lywhf9rpf.svg',
+		link: 'https://vercel.com',
 	},
 	{
 		name: 'Airbnb',
 		path: 'https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276558/logos/pmblusboe7vkw8vxdknx.svg',
+		link: 'https://vercel.com',
 	},
 	{
 		name: 'Tina',
 		path: 'https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276560/logos/afqhiygywyphuou6xtxc.svg',
+		link: 'https://vercel.com',
 	},
 	{
 		name: 'Stackoverflow',
 		path: 'https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276558/logos/ts1j4mkooxqmscgptafa.svg',
+		link: 'https://vercel.com',
 	},
 	{
 		name: 'mistral',
 		path: 'https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276558/logos/tyos2ayezryjskox3wzs.svg',
+		link: 'https://vercel.com',
 	},
 ]
 // Split reviews into two rows
 const firstRow = ref(reviews.slice(0, reviews.length / 2))
 // const secondRow = ref(reviews.slice(reviews.length / 2))
-const texts = [
-	'Hello',
-	'Morphing',
-	'Text',
-	'Animation',
-	'Vue',
-	'Component',
-	'Smooth',
-	'Transition',
-	'Engaging',
-]
+const texts = ['vue', 'nuxt', 'vite', 'next ui', '@clerk/nuxt', 'motion-v', 'tailwindcss']
 </script>
