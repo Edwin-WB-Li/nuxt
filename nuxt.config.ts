@@ -11,7 +11,7 @@ export default defineNuxtConfig({
 	modules: [
 		// '@nuxtjs/tailwindcss',
 		'@nuxt/eslint',
-		// 'nuxt-umami',
+		'nuxt-umami',
 		'@nuxt/ui',
 		'@clerk/nuxt',
 		'@nuxt/image',
@@ -43,6 +43,19 @@ export default defineNuxtConfig({
 	// 	},
 	// },
 	// },
+	umami: {
+		id: '7e8c67ee-760d-4f16-a4c1-12f9ac0452f4',
+		host: 'https://nuxt-blog.weiibn.shop',
+		autoTrack: true,
+		// proxy: 'cloak',
+		// useDirective: true,
+		// ignoreLocalhost: true,
+		// excludeQueryParams: false,
+		// domains: ['cool-site.app', 'my-space.site'],
+		// customEndpoint: '/my-custom-endpoint',
+		// enabled: false,
+		// logErrors: true,
+	},
 	colorMode: {
 		// 根据系统设置自动切换
 		preference: 'light', // 可选 'light'/'dark'/'system'
