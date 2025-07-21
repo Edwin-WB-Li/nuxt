@@ -2,11 +2,42 @@ import { defineNuxtConfig } from 'nuxt/config'
 import tailwindcss from '@tailwindcss/vite'
 import svgLoader from 'vite-svg-loader'
 
+const { NUXT_PUBLIC_UMAMI_HOST, NUXT_PUBLIC_UMAMI_ID, NUXT_PUBLIC_UMAMI_DOMAINS } = process.env
+
 export default defineNuxtConfig({
 	compatibilityDate: '2025-07-09',
 	srcDir: 'src',
+	runtimeConfig: {
+		public: {
+			umamiApi: '',
+			umamiApiKey: '',
+			umami: {
+				// https://umami.nuxt.dev/getting-started/introduction
+				id: NUXT_PUBLIC_UMAMI_ID,
+				host: NUXT_PUBLIC_UMAMI_HOST,
+				autoTrack: true,
+				// proxy: 'cloak',
+				useDirective: true,
+				domains: NUXT_PUBLIC_UMAMI_DOMAINS?.split(','),
+				ignoreLocalhost: true,
+				// excludeQueryParams: false,
+				// customEndpoint: '/my-custom-endpoint',
+				// enabled: false,
+				// logErrors: true,
+			},
+		},
+	},
 	typescript: {
 		typeCheck: true,
+	},
+	app: {
+		head: {
+			title: 'Nuxt Blog', // 默认备用标题
+			htmlAttrs: {
+				lang: 'en',
+			},
+			link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+		},
 	},
 	modules: [
 		// '@nuxtjs/tailwindcss',
@@ -14,49 +45,26 @@ export default defineNuxtConfig({
 		'nuxt-umami',
 		'@nuxt/ui',
 		'@clerk/nuxt',
+		// '@pinia/nuxt',
 		'@nuxt/image',
 		'@nuxtjs/i18n',
 		'@nuxtjs/color-mode',
-		// "@nuxt/content",
+		// '@nuxt/content',
 	],
-	// nitro: {
-	// devProxy: {
-	// 	'/apis': {
-	// 		target: 'https://api.daidr.me',
-	// 		changeOrigin: true,
-	// 	},
+	// umami: {
+	// 	// https://umami.nuxt.dev/getting-started/introduction
+	// 	id: '7e8c67ee-760d-4f16-a4c1-12f9ac0452f4',
+	// 	host: 'https://cloud.umami.is',
+	// 	autoTrack: true,
+	// 	// proxy: 'cloak',
+	// 	useDirective: true,
+	// 	domains: ['nuxt-blog.weiibn.shop'],
+	// 	ignoreLocalhost: true,
+	// 	// excludeQueryParams: false,
+	// 	// customEndpoint: '/my-custom-endpoint',
+	// 	// enabled: false,
+	// 	// logErrors: true,
 	// },
-	// 开发环境代理
-	// devProxy: {
-	// 	'/apis': {
-	// 		target: 'https://api.daidr.me',
-	// 		changeOrigin: true,
-	// 		// 可选：重写路径（若接口路径需调整）
-	// 		// rewrite: path => path.replace(/^\/hitokoto/, ''),
-	// 	},
-	// },
-	// // 生产环境代理（推荐）
-	// routeRules: {
-	// 	'/hitokoto/**': {
-	// 		proxy: 'https://api.daidr.me/apis/**',
-	// 		ssr: false, // 禁用服务端渲染避免重复请求
-	// 	},
-	// },
-	// },
-	umami: {
-		// https://umami.nuxt.dev/getting-started/introduction
-		id: '7e8c67ee-760d-4f16-a4c1-12f9ac0452f4',
-		host: 'https://cloud.umami.is',
-		autoTrack: true,
-		// proxy: 'cloak',
-		useDirective: true,
-		domains: ['nuxt-blog.weiibn.shop'],
-		ignoreLocalhost: true,
-		// excludeQueryParams: false,
-		// customEndpoint: '/my-custom-endpoint',
-		// enabled: false,
-		// logErrors: true,
-	},
 	colorMode: {
 		// 根据系统设置自动切换
 		preference: 'light', // 可选 'light'/'dark'/'system'
@@ -118,9 +126,6 @@ export default defineNuxtConfig({
 			extensions: ['.vue', '.tsx'],
 		},
 	],
-	// tailwindcss: {
-	//   configPath: "./tailwind.config.ts", // 指定 tailwind 配置文件
-	// },
 	// postcss: {
 	// 	plugins: {
 	// 		'@tailwindcss/postcss': {},
@@ -130,5 +135,4 @@ export default defineNuxtConfig({
 	// 		autoprefixer: {},
 	// 	},
 	// },
-	// tailwindcss: { exposeConfig: true }, // 允许在运行时获取 Tailwind 配置
 })

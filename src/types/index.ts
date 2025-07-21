@@ -37,4 +37,38 @@ interface HitokotoResponse {
 	from: string
 }
 
-export type { NavConfigType, AnimateLogoCloudProps, SphereIcon, IconCloudProps, HitokotoResponse }
+interface WebsitesResponse {
+	id: string
+	name: string
+	domain: string
+	shareId: null
+	resetAt: null
+	userId: string
+	teamId: null
+	createdBy: string
+	createdAt: string
+	updatedAt: string
+	deletedAt: null
+	user?: {
+		username: string
+		id: string
+	}
+}
+
+interface UmamiWebsitesResponse {
+	data: WebsitesResponse[]
+	count: number
+	page: number
+	pageSize: number
+	orderBy: string
+}
+
+export type {
+	NavConfigType,
+	AnimateLogoCloudProps,
+	SphereIcon,
+	IconCloudProps,
+	HitokotoResponse,
+	WebsitesResponse,
+	UmamiWebsitesResponse,
+}

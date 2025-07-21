@@ -1,25 +1,4 @@
-import type { NavigationMenuItem } from '@nuxt/ui'
 import type { NavConfigType } from '@/types'
-
-const navConfig = ref<NavigationMenuItem[][]>([
-	[
-		{
-			label: 'Home',
-			icon: 'i-lucide-book-open',
-			to: '/',
-		},
-		{
-			label: 'Signin',
-			icon: 'i-lucide-database',
-			to: '/signin',
-		},
-		{
-			label: 'About',
-			icon: 'i-lucide-box',
-			to: '/about',
-		},
-	],
-])
 
 const nav = ref<NavConfigType[]>([
 	{
@@ -66,4 +45,4 @@ const photoGalleryItems = ref([
 	},
 ])
 
-export { navConfig, nav, photoGalleryItems }
+export { nav, photoGalleryItems }
