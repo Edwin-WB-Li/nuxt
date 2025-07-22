@@ -63,11 +63,24 @@ interface UmamiWebsitesResponse {
 	orderBy: string
 }
 
+interface Pageviews {
+	value: number
+	prev: number
+}
+interface UmamiStats {
+	pageviews: Pageviews
+	visitors: Pageviews
+	visits: Pageviews
+	bounces: Pageviews
+	totaltime: Pageviews
+}
+
 export type {
 	NavConfigType,
 	AnimateLogoCloudProps,
 	SphereIcon,
 	IconCloudProps,
+	UmamiStats,
 	HitokotoResponse,
 	WebsitesResponse,
 	UmamiWebsitesResponse,

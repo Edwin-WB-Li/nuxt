@@ -42,6 +42,7 @@ export default defineNuxtConfig({
 	modules: [
 		// '@nuxtjs/tailwindcss',
 		'@nuxt/eslint',
+		'@nuxt/content',
 		'nuxt-umami',
 		'@nuxt/ui',
 		'@clerk/nuxt',
@@ -49,7 +50,6 @@ export default defineNuxtConfig({
 		'@nuxt/image',
 		'@nuxtjs/i18n',
 		'@nuxtjs/color-mode',
-		// '@nuxt/content',
 	],
 	// umami: {
 	// 	// https://umami.nuxt.dev/getting-started/introduction
@@ -73,6 +73,22 @@ export default defineNuxtConfig({
 		storageKey: 'nuxt-theme', // 本地存储键名
 		// classSuffix: '', // 移除默认类名后缀（如 -mode）
 		// darkMode: 'class', // 使用 class 模式
+	},
+	// @nuxt/content 配置
+	content: {
+		build: {
+			markdown: {
+				toc: {
+					depth: 6, // 包含h6级别的标题
+					searchDepth: 6, // 搜索嵌套标签的深度
+				},
+				// Object syntax can be used to override default options
+				// rehypePlugins: {
+				// 	// Override remark-emoji options
+				// },
+				// Disable remark-gfm
+			},
+		},
 	},
 	i18n: {
 		// langDir: path.resolve(__dirname, '/i18n/locales/'), // 动态解析路径,
