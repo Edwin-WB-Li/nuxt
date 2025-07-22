@@ -303,6 +303,7 @@
 // 	'https://picsum.photos/seed/common-existence/1920/1080',
 // 	'https://picsum.photos/seed/no-devolucion/1920/1080',
 // ]
+
 const people = [
 	{
 		id: 1,

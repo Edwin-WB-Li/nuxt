@@ -73,6 +73,16 @@
 </template>
 <script setup lang="ts">
 // import { photoGalleryItems } from '@/config'
+
+useSeoMeta({
+	title: 'Edwin WB Li | Nuxt Blog',
+	ogTitle: 'Edwin WB Li  Nuxt Blog',
+	description: '这是我搭建的 Nuxt 博客，记录我的前端学习和生活点滴',
+	ogDescription: '这是我搭建的 Nuxt 博客，记录我的前端学习和生活点滴',
+	ogImage: 'https://raw.githubusercontent.com/Edwin-WB-Li/static/master/images/svg/nuxt-blog.png',
+	twitterCard: 'summary_large_image',
+})
+
 const logoUrl = new URL('@/assets/images/wechat.jpg', import.meta.url).href
 const items = [
 	{

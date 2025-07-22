@@ -15,11 +15,7 @@
 						</template>
 						<slot />
 						<template #footer>
-							<div class="flex w-full items-center justify-center">
-								<p class="text-sm text-zinc-500 dark:text-zinc-400">
-									&copy; {{ new Date().getFullYear() }} - Nuxt Starter
-								</p>
-							</div>
+							<Footer />
 						</template>
 					</UCard>
 				</TracingBeam>
@@ -27,8 +23,7 @@
 		</div>
 	</ColorScheme>
 </template>
-<script lang="ts" setup>
-// import bg from '~/assets/images/bg.svg'
+<script setup lang="ts">
 const colorMode = useColorMode()
 const effectiveTheme = computed(() => colorMode.value) // 实际生效的主题
 </script>

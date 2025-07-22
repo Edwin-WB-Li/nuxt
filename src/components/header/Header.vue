@@ -45,6 +45,6 @@
 <script setup lang="ts">
 import SignInPage from '@/components/userSignin/UserSignin.vue'
 defineOptions({
-	name: 'AppHeader', // 或 TheHeader
+	name: 'AppHeader',
 })
 </script>

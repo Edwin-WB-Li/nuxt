@@ -1,7 +1,7 @@
 <template>
 	<div>
-		<button @click="umTrackEvent('button-1')">Button 1</button>
-		<button @click="onAction">Button 2</button>
+		<UButton @click="umTrackEvent('button-1')">Button 1</UButton>
+		<UButton @click="onAction">Button 2</UButton>
 	</div>
 </template>
 
