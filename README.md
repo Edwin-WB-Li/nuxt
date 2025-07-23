@@ -147,4 +147,4 @@ NUXT_PUBLIC_ 前缀的变量会暴露给客户端
 
 nuxt-content
 
-<ContentRenderer> 组件用于渲染通过 queryCollection() 查询获得的文档 ，此组件 仅支持Markdown 文件
+`<ContentRenderer>` 组件用于渲染通过 queryCollection() 查询获得的文档 ，此组件 仅支持Markdown 文件
