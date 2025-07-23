@@ -144,3 +144,7 @@ NUXT_PUBLIC_ 前缀的变量会暴露给客户端
 | 仅需基础 SEO（标题、描述、og）   | ✅ useSeoMeta（简洁高效） |
 | 需额外控制（样式、脚本、属性）    | ✅ useHead（功能全面）    |
 | 复杂页面（SEO + 外部资源）       | ✅ 组合使用（分工明确）   |
+
+nuxt-content
+
+<ContentRenderer> 组件用于渲染通过 queryCollection() 查询获得的文档 ，此组件 仅支持Markdown 文件
