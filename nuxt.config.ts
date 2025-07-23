@@ -27,18 +27,6 @@ export default defineNuxtConfig({
 			},
 		},
 	},
-	typescript: {
-		typeCheck: true,
-	},
-	app: {
-		head: {
-			title: 'Nuxt Blog', // 默认备用标题
-			htmlAttrs: {
-				lang: 'en',
-			},
-			link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-		},
-	},
 	modules: [
 		// '@nuxtjs/tailwindcss',
 		'@nuxt/eslint',
@@ -51,6 +39,18 @@ export default defineNuxtConfig({
 		'@nuxtjs/i18n',
 		'@nuxtjs/color-mode',
 	],
+	typescript: {
+		typeCheck: true,
+	},
+	app: {
+		head: {
+			title: 'Nuxt Blog', // 默认备用标题
+			htmlAttrs: {
+				lang: 'en',
+			},
+			link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+		},
+	},
 	// umami: {
 	// 	// https://umami.nuxt.dev/getting-started/introduction
 	// 	id: '7e8c67ee-760d-4f16-a4c1-12f9ac0452f4',
@@ -79,15 +79,89 @@ export default defineNuxtConfig({
 		build: {
 			markdown: {
 				toc: {
-					depth: 6, // 包含h6级别的标题
-					searchDepth: 6, // 搜索嵌套标签的深度
+					depth: 4, // 包含h6级别的标题
+					searchDepth: 4, // 搜索嵌套标签的深度
 				},
-				// Object syntax can be used to override default options
-				// rehypePlugins: {
-				// 	// Override remark-emoji options
+				// remarkPlugins: {
+				// 	'remark-emoji': {
+				// 		options: {
+				// 			emoticon: true,
+				// 			padSpaceAfter: false, // 防止添加额外空格
+				// 		},
+				// 	},
+				// 	'remark-gfm': {
+				// 		options: {
+				// 			tablePipeAlign: true,
+				// 			autolink: true,
+				// 			stringLength: (str: string) => str.length, // 精确计算表格宽度
+				// 			// strikethrough: true,
+				// 			tableCellPadding: true, // 启用表格单元格内边距
+				// 			gfm: true, // 启用 GitHub Flavored Markdown
+				// 		},
+				// 	},
+				// 	'remark-toc': {
+				// 		options: {
+				// 			heading: '目录',
+				// 			maxDepth: 4,
+				// 			tight: true,
+				// 			ordered: false, // 生成无序列表
+				// 		},
+				// 	},
 				// },
-				// Disable remark-gfm
+				// rehypePlugins: {
+				// 	'rehype-slug': {
+				// 		options: {
+				// 			slugify: (str: string) => str.replace(/[^a-z0-9]+/gi, '-'),
+				// 		},
+				// 	},
+				// 	'rehype-highlight': {
+				// 		options: {
+				// 			ignoreMissing: true,
+				// 			aliases: { vue: 'html' },
+				// 		},
+				// 	},
+				// },
+				highlight: {
+					// theme: 'github-light',
+					// 或者
+					theme: {
+						// 默认主题（同单一字符串）
+						default: 'github-light',
+						// `html.dark` 时使用的主题
+						dark: 'github-dark',
+					},
+
+					// 代码高亮配置
+					langs: [
+						'html',
+						'css',
+						'json',
+						'tsx',
+						'jsx',
+						'javascript',
+						'typescript',
+						'vue',
+						'shell',
+						'mdc',
+						'md',
+						'yaml',
+						'c',
+						'bash',
+						'java',
+						'scss',
+						'less',
+					],
+				},
 			},
+		},
+		renderer: {
+			// 为所有标题启用链接生成
+			anchorLinks: true,
+			// 替换 markdown 组件，渲染自定义组件替代默认组件
+			alias: {},
+		},
+		preview: {
+			api: 'https://api.nuxt.studio',
 		},
 	},
 	i18n: {

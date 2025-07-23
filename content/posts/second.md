@@ -101,3 +101,22 @@ First list item
 # 测试渲染表情
 
 :rocket: :tada: :100:
+
+## 🎨 Documentations
+
+- [Nuxt v3](/nuxt/getting-started/introduction)
+- [Nuxt Content v2](/content-v2/getting-started/installation)
+
+## 🎨 Playground
+
+- [Playground](/playground)
+- [Query Builder](/query-playground)
+- [Custom 404 page](/404)
+- [Not Found Content](/not-found-content)
+- [content](/real-content/content)
+- [post](/real-content/post)
+- [query](/real-content/query)
+
+Inline code: `const a = 1`{lang="ts"}
+
+In order to test [Tailwind CSS]{.text-orange-500}, uncomment `@nuxtjs/tailwindcss` in `nuxt.config.ts`.
