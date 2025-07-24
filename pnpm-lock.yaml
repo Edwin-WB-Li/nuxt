@@ -41,6 +41,9 @@ importers:
       nuxt:
         specifier: 3.17.5
         version: 3.17.5(@netlify/blobs@9.1.2)(@parcel/watcher@2.5.1)(@types/node@24.0.15)(better-sqlite3@12.2.0)(db0@0.3.2(better-sqlite3@12.2.0))(eslint@9.31.0(jiti@2.4.2))(ioredis@5.6.1)(lightningcss@1.30.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.45.1)(terser@5.43.1)(typescript@5.8.3)(vite@6.3.5(@types/node@24.0.15)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0))(vue-tsc@3.0.3(typescript@5.8.3))(yaml@2.8.0)
+      nuxt-swiper:
+        specifier: ^2.0.1
+        version: 2.0.1(magicast@0.3.5)
       nuxt-umami:
         specifier: ^3.2.0
         version: 3.2.0(magicast@0.3.5)
@@ -5288,6 +5291,9 @@ packages:
     resolution: {integrity: sha512-w0ZgRCE9wGZLbmAnCUV2F4/Gjwy1J6L9FejrpTHSHM8Igrf2THwe809QOXbdV8g4+Elkz2MeC/34ZFyt05tKCg==}
     hasBin: true
 
+  nuxt-swiper@2.0.1:
+    resolution: {integrity: sha512-mUAzuGqQHcsqJa1p5y/Hafvurn62o6njHq8DcwQErourkpJpv7z/SnnT0ezXMr7YvDPNg22ayEKGdHkGXXOxMQ==}
+
   nuxt-umami@3.2.0:
     resolution: {integrity: sha512-fqX5tX+2P/5J0fES3C7ykJP6H4bcP8fJzYZP7UcIW0ibwuLRbBzTRDdCd7gEkaXB0nABpSfKlCVInhMcIs07GA==}
 
@@ -6622,6 +6628,10 @@ packages:
     resolution: {integrity: sha512-VvrHQ+9uniE+Mvx3+C9IEe/lWasXCU0nXMY2kZeLrHNICuRiC8uMPyM14UEaMOFA5mhyQqEkB02VoQ16n3DLaw==}
     engines: {node: '>=16'}
     hasBin: true
+
+  swiper@11.2.10:
+    resolution: {integrity: sha512-RMeVUUjTQH+6N3ckimK93oxz6Sn5la4aDlgPzB+rBrG/smPdCTicXyhxa+woIpopz+jewEloiEE3lKo1h9w2YQ==}
+    engines: {node: '>= 4.7.0'}
 
   swr@2.3.4:
     resolution: {integrity: sha512-bYd2lrhc+VarcpkgWclcUi92wYCpOgMws9Sd1hG1ntAu0NEy+14CbotuFjshBU2kt9rYj9TSmDcybpxpeTU1fg==}
@@ -9102,7 +9112,7 @@ snapshots:
 
   '@nuxt/telemetry@2.6.6(magicast@0.3.5)':
     dependencies:
-      '@nuxt/kit': 3.17.5(magicast@0.3.5)
+      '@nuxt/kit': 3.17.7(magicast@0.3.5)
       citty: 0.1.6
       consola: 3.4.2
       destr: 2.0.5
@@ -13419,6 +13429,13 @@ snapshots:
       - magicast
       - vue-component-type-helpers
 
+  nuxt-swiper@2.0.1(magicast@0.3.5):
+    dependencies:
+      '@nuxt/kit': 3.17.7(magicast@0.3.5)
+      swiper: 11.2.10
+    transitivePeerDependencies:
+      - magicast
+
   nuxt-umami@3.2.0(magicast@0.3.5):
     dependencies:
       '@nuxt/kit': 3.17.7(magicast@0.3.5)
@@ -15073,6 +15090,8 @@ snapshots:
       csso: 5.0.5
       picocolors: 1.1.1
       sax: 1.4.1
+
+  swiper@11.2.10: {}
 
   swr@2.3.4(react@19.1.0):
     dependencies:
