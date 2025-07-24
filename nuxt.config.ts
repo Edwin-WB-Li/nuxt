@@ -161,7 +161,7 @@ export default defineNuxtConfig({
 			alias: {},
 		},
 		preview: {
-			api: 'https://nuxt-blog-studio.nuxt.space/',
+			api: 'https://nuxt-blog-studio.nuxt.space',
 		},
 	},
 	i18n: {
