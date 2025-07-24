@@ -1,5 +1,5 @@
 <template>
-	<div class="mx-auto max-w-3xl p-4">
+	<div class="flex w-full items-center justify-center">
 		<!-- 渲染Markdown内容 -->
 		<template v-if="posts">
 			<ContentRenderer :value="posts" />
@@ -7,8 +7,8 @@
 		<template v-else>
 			<div class="empty-page">
 				<h1>页面未找到</h1>
-				<p>抱歉！您查找的内容不存在。</p>
-				<NuxtLink to="/">返回首页</NuxtLink>
+				<p class="pb-4">抱歉！您查找的内容不存在</p>
+				<NuxtLink to="/" class="w-full text-center">返回首页</NuxtLink>
 			</div>
 		</template>
 	</div>

@@ -35,11 +35,11 @@ if (error.value) {
 }
 
 // 打印调试信息
-console.log('网站数据数组:', data.value)
+// console.log('网站数据数组:', data.value)
 
 // 存储到 Ref
 if (data.value) {
 	umamiState.value = data.value
-	console.log('处理后的数据:', umamiState.value)
+	// console.log('处理后的数据:', umamiState.value)
 }
 </script>

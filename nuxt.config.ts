@@ -36,6 +36,7 @@ export default defineNuxtConfig({
 		'@clerk/nuxt',
 		// '@pinia/nuxt',
 		'@nuxt/image',
+		'nuxt-swiper',
 		'@nuxtjs/i18n',
 		'@nuxtjs/color-mode',
 	],
@@ -162,6 +163,7 @@ export default defineNuxtConfig({
 		},
 		preview: {
 			api: 'https://nuxt-blog-studio.nuxt.space',
+			dev: true,
 		},
 	},
 	i18n: {
