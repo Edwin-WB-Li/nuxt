@@ -1,4 +1,4 @@
->微信公众号排版工具。问题或建议
+> 微信公众号排版工具。问题或建议
 
 建议使用 **Chrome** 浏览器，体验最佳效果。
 
@@ -12,17 +12,15 @@ Markdown是一种轻量级的「标记语言」。
 
 ## Autolink literals
 
-<www.example.com>, <https://example.com>, and <contact@example.com>.
+<[www.example.com](http://www.example.com)>, <https://example.com>, and <contact@example.com>.
 
 ## Footnote
 
-A note[^1]
-
-[^1]: Big note.
+A note[1](#user-content-fn-1){#user-content-fnref-1 aria-described-by="footnote-label" dataFootnoteRef=""}
 
 ## Strikethrough
 
-~one~ or ~~two~~ tildes.
+~~one~~ or ~~two~~ tildes.
 
 ## Table
 
@@ -31,14 +29,14 @@ A note[^1]
 
 ## Tasklist
 
-* [ ] to do
-* [x] done
+- to do
+- done
 
 ## 1 Markdown.com.cn 简介
 
-* 支持自定义样式的 Markdown 编辑器
-* 支持微信公众号、知乎和稀土掘金
-* 点击右上方对应图标，一键复制到各平台
+- 支持自定义样式的 Markdown 编辑器
+- 支持微信公众号、知乎和稀土掘金
+- 点击右上方对应图标，一键复制到各平台
 
 ## 2 Markdown语法教程
 
@@ -70,16 +68,16 @@ A note[^1]
 
 无序列表的使用，在符号`-`后加空格使用。如下：
 
-* 无序列表 1
-* 无序列表 2
-* 无序列表 3
+- 无序列表 1
+- 无序列表 2
+- 无序列表 3
 
 如果要控制列表的层级，则需要在符号`-`前使用空格。如下：
 
-* 无序列表 1
-* 无序列表 2
-  * 无序列表 2.1
-  * 无序列表 2.2
+- 无序列表 1
+- 无序列表 2
+  - 无序列表 2.1
+  - 无序列表 2.2
 
 **由于微信原因，最多支持到二级列表**。
 
@@ -103,8 +101,7 @@ A note[^1]
 
 微信公众号仅支持公众号文章链接，即域名为`https://mp.weixin.qq.com/`的合法链接。使用方法如下所示：
 
-对于该论述，欢迎读者查阅之前发过的文章，[你是《未来世界的幸存者》么？](https://mp.weixin.qq.com/s/s5IhxV2ooX3JN_X416nidA)
-<a id="jump_8"></a>
+对于该论述，欢迎读者查阅之前发过的文章，[你是《未来世界的幸存者》么？](https://mp.weixin.qq.com/s/s5IhxV2ooX3JN_X416nidA)[](){#jump_8}
 
 ### 2.8 图片
 
@@ -130,11 +127,11 @@ A note[^1]
 
 可以使用冒号来定义表格的对齐方式，如下：
 
-| 姓名   | 年龄 |     工作 |
-| :----- | :--: | -------: |
-| 小可爱 |  18  | 吃可爱多 |
-| 小小勇敢 |  20  | 爬棵勇敢树 |
-| 小小小机智 |  22  | 看一本机智书 |
+| 姓名    |  年龄 |     工作 |
+| :---- | :-: | -----: |
+| 小可爱   |  18 |   吃可爱多 |
+| 小小勇敢  |  20 |  爬棵勇敢树 |
+| 小小小机智 |  22 | 看一本机智书 |
 
 ## 3. 特殊语法
 
@@ -144,14 +141,14 @@ A note[^1]
 
 脚注与链接的区别如下所示：
 
-```markdown
+```text
 链接：[文字](链接)
 脚注：[文字](脚注解释 "脚注名字")
 ```
 
 有人认为在[大前端时代](https://en.wikipedia.org/wiki/Front-end_web_development "Front-end web development")的背景下，移动端开发（Android、IOS）将逐步退出历史舞台。
 
-[全栈工程师](是指掌握多种技能，并能利用多种技能独立完成产品的人。 "什么是全栈工程师")在业务开发流程中起到了至关重要的作用。
+[全栈工程师](%E6%98%AF%E6%8C%87%E6%8E%8C%E6%8F%A1%E5%A4%9A%E7%A7%8D%E6%8A%80%E8%83%BD%EF%BC%8C%E5%B9%B6%E8%83%BD%E5%88%A9%E7%94%A8%E5%A4%9A%E7%A7%8D%E6%8A%80%E8%83%BD%E7%8B%AC%E7%AB%8B%E5%AE%8C%E6%88%90%E4%BA%A7%E5%93%81%E7%9A%84%E4%BA%BA%E3%80%82 "什么是全栈工程师")在业务开发流程中起到了至关重要的作用。
 
 脚注内容请拉到最下面观看。
 
@@ -219,9 +216,9 @@ interface SphereIcon {
 
 其中**微信代码主题与微信官方一致**，有以下注意事项：
 
-* 带行号且不换行，代码大小与官方一致
-* 需要在代码块处标志语言，否则无法高亮
-* 粘贴到公众号后，用鼠标点代码块内外一次，完成高亮
+- 带行号且不换行，代码大小与官方一致
+- 需要在代码块处标志语言，否则无法高亮
+- 粘贴到公众号后，用鼠标点代码块内外一次，完成高亮
 
 diff 不能同时和其他语言的高亮同时显示，且需要调整代码主题为微信代码主题以外的代码主题才能看到 diff 效果，使用效果如下:
 
@@ -236,21 +233,21 @@ diff 不能同时和其他语言的高亮同时显示，且需要调整代码主
 
 > 支持平台：微信公众号、知乎。
 
-行内公式使用方法，比如这个化学公式：$\ce{Hg^2+ ->[I-] HgI2 ->[I-] [Hg^{II}I4]^2-}$
+行内公式使用方法，比如这个化学公式：$\ce{Hg^2+ -> [I-] HgI2 -> [I-] [Hg^{II}I4] ^2-}$
 
 块公式使用方法如下：
 
-$$H(D_2) = -\left(\frac{2}{4}\log_2 \frac{2}{4} + \frac{2}{4}\log_2 \frac{2}{4}\right) = 1$$
+$$H(D\_2) = -\left(\frac{2}{4}\log\_2 \frac{2}{4} + \frac{2}{4}\log\_2 \frac{2}{4}\right) = 1$$
 
 矩阵：
 
 $$
-  \begin{pmatrix}
-  1 & a_1 & a_1^2 & \cdots & a_1^n \\
-  1 & a_2 & a_2^2 & \cdots & a_2^n \\
-  \vdots & \vdots & \vdots & \ddots & \vdots \\
-  1 & a_m & a_m^2 & \cdots & a_m^n \\
-  \end{pmatrix}
+\begin{pmatrix}
+1 & a\_1 & a\_1^2 & \cdots & a\_1^n \\
+1 & a\_2 & a\_2^2 & \cdots & a\_2^n \\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+1 & a\_m & a\_m^2 & \cdots & a\_m^n \\
+\end{pmatrix}
 $$
 
 公式由于微信不支持，目前的解决方案是转成 svg 放到微信中，无需调整，矢量不失真。
@@ -281,7 +278,7 @@ Markdown Nice 这么好用，简直是{喜大普奔|hē hē hē hē}呀！
 
 通过`<![](url),![](url)>`这种语法设置横屏滑动滑动片，具体用法如下：
 
-<![蓝1](https://markdown.com.cn/images/blue.jpg),![绿2](https://markdown.com.cn/images/green.jpg),![红3](https://markdown.com.cn.jpg)>
+\<![蓝1](https://markdown.com.cn/images/blue.jpg),![绿2](https://markdown.com.cn/images/green.jpg),![红3](https://markdown.com.cn.jpg)>
 
 ## 4 其他语法
 
@@ -293,8 +290,7 @@ Markdown Nice 这么好用，简直是{喜大普奔|hē hē hē hē}呀！
 <span style="display:block;text-align:right;color:orangered;">橙色居右</span>
 ```
 
-<span style="display:block;text-align:right;color:orangered;">橙色居右</span>
-<span style="display:block;text-align:center;color:orangered;">橙色居中</span>
+[橙色居右]{style="display:block;text-align:right;color:orangered;"} [橙色居中]{style="display:block;text-align:center;color:orangered;"}
 
 ### 4.2 UML
 
@@ -302,5 +298,9 @@ Markdown Nice 这么好用，简直是{喜大普奔|hē hē hē hē}呀！
 
 ## 5 致谢
 
-* 歌词经理 [wechat-fromat](https://github.com/lyricat/wechat-format "灵感来源")
-* 颜家大少 [MD2All](http://md.aclickall.com/ "MdA2All")
+- 歌词经理 [wechat-fromat](https://github.com/lyricat/wechat-format "灵感来源")
+- 颜家大少 [MD2All](http://md.aclickall.com/ "MdA2All")
+
+## Footnotes
+
+1. Big note. [↩](#user-content-fnref-1){.data-footnote-backref ariaLabel="Back to reference 1" dataFootnoteBackref=""}
