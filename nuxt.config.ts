@@ -18,7 +18,7 @@ export default defineNuxtConfig({
 				autoTrack: true,
 				// proxy: 'cloak',
 				useDirective: true,
-				domains: NUXT_PUBLIC_UMAMI_DOMAINS?.split(','),
+				domains: NUXT_PUBLIC_UMAMI_DOMAINS?.split(',') ?? [],
 				ignoreLocalhost: true,
 				// excludeQueryParams: false,
 				// customEndpoint: '/my-custom-endpoint',
