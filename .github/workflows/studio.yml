@@ -61,7 +61,7 @@ jobs:
         run: ${{ steps.pkgman.outputs.package_manager }} run build
         env:
           NITRO_PRESET: github_pages
-          NUXT_CONTENT_PREVIEW_API: https://nuxt-blog-studio.nuxt.space
+          NUXT_CONTENT_PREVIEW_API: https://api.nuxt.studio
           NUXT_CLERK_SECRET_KEY: ${{ secrets.NUXT_CLERK_SECRET_KEY }}
           NUXT_PUBLIC_CLERK_PUBLISHABLE_KEY: ${{ secrets.NUXT_PUBLIC_CLERK_PUBLISHABLE_KEY }}
           NUXT_PUBLIC_UMAMI_API: ${{ secrets.NUXT_PUBLIC_UMAMI_API }}

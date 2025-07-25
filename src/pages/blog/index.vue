@@ -291,6 +291,26 @@
 		<div class="mb-10 flex min-h-96 w-full flex-row items-center justify-center">
 			<AnimatedTooltip :items="people" />
 		</div>
+		<nav>
+			<div v-if="navData">
+				<template v-for="item in navData">
+					<div
+						v-for="data in item.children"
+						:key="data.path"
+						class="flex flex-row items-center gap-2 py-4"
+					>
+						<NuxtImg :src="data.image as string" class="size-10" />
+						<!-- <span class="pr-2">{{ $dayjs(data.date).format('YYYY-MM-DD') }}</span> -->
+						<div>
+							<h2>
+								<NuxtLink :to="data.path">{{ data.title }}</NuxtLink>
+							</h2>
+							<p>{{ data.description }}</p>
+						</div>
+					</div>
+				</template>
+			</div>
+		</nav>
 	</div>
 </template>
 <script setup lang="ts">
@@ -348,4 +368,13 @@ const people = [
 			'https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3534&q=80',
 	},
 ]
+
+const { data: navData } = await useAsyncData('blog-list', () => {
+	return queryCollectionNavigation('posts', ['title', 'date', 'image', 'description']).order(
+		'date',
+		'DESC'
+	)
+})
+
+console.log('nav:', navData.value)
 </script>

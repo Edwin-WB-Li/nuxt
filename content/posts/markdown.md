@@ -1,3 +1,16 @@
+---
+title: My Markdown Post
+description: This is an example of a blog post using Nuxt Content
+date: 2025-07-24
+image: https://images.pexels.com/photos/1050312/pexels-photo-1050312.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+minRead: 8
+author:
+  name: Emma Thompson
+  avatar:
+    src: https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+    alt: Emma Thompson
+---
+
 > 微信公众号排版工具。问题或建议
 
 建议使用 **Chrome** 浏览器，体验最佳效果。
@@ -21,11 +34,6 @@ A note[1](#user-content-fn-1){#user-content-fnref-1 aria-described-by="footnote-
 ## Strikethrough
 
 ~~one~~ or ~~two~~ tildes.
-
-## Table
-
-| a | b  |  c |  d  |
-| - | :- | -: | :-: |
 
 ## Tasklist
 
@@ -56,9 +64,9 @@ A note[1](#user-content-fn-1){#user-content-fnref-1 aria-described-by="footnote-
 
 **这个是粗体**
 
-*这个是斜体*
+_这个是斜体_
 
-***这个是粗体加斜体***
+**_这个是粗体加斜体_**
 
 ~~这里想用删除线~~
 
@@ -104,7 +112,7 @@ A note[1](#user-content-fn-1){#user-content-fnref-1 aria-described-by="footnote-
 
 插入图片，格式如下：
 
-![这里写图片描述](https://www.nginx.cn/wp-content/uploads/2020/03/qrcode_for_gh_82cf87d482f0_258.jpg)
+![这里写图片描述](https://markdown.com.cn/images/i-am-svg.svg)
 
 支持 jpg、png、gif、svg 等图片格式，**其中 svg 文件仅可在微信公众平台中使用**，svg 文件示例如下：
 
@@ -112,7 +120,7 @@ A note[1](#user-content-fn-1){#user-content-fnref-1 aria-described-by="footnote-
 
 支持图片**拖拽和截图粘贴**到编辑器中。
 
-注：支持图片 ***拖拽和截图粘贴*** 到编辑器中，仅支持 https 的图片，图片粘贴到微信时会自动上传微信服务器。
+注：支持图片 **_拖拽和截图粘贴_** 到编辑器中，仅支持 https 的图片，图片粘贴到微信时会自动上传微信服务器。
 
 ### 2.9 分割线
 
@@ -124,11 +132,11 @@ A note[1](#user-content-fn-1){#user-content-fnref-1 aria-described-by="footnote-
 
 可以使用冒号来定义表格的对齐方式，如下：
 
-| 姓名    |  年龄 |     工作 |
-| :---- | :-: | -----: |
-| 小可爱   |  18 |   吃可爱多 |
-| 小小勇敢  |  20 |  爬棵勇敢树 |
-| 小小小机智 |  22 | 看一本机智书 |
+| 姓名       | 年龄 |         工作 |
+| :--------- | :--: | -----------: |
+| 小可爱     |  18  |     吃可爱多 |
+| 小小勇敢   |  20  |   爬棵勇敢树 |
+| 小小小机智 |  22  | 看一本机智书 |
 
 ## 3. 特殊语法
 
@@ -143,9 +151,9 @@ A note[1](#user-content-fn-1){#user-content-fnref-1 aria-described-by="footnote-
 脚注：[文字](脚注解释 "脚注名字")
 ```
 
-有人认为在[大前端时代](https://en.wikipedia.org/wiki/Front-end_web_development "Front-end web development")的背景下，移动端开发（Android、IOS）将逐步退出历史舞台。
+有人认为在[大前端时代](https://en.wikipedia.org/wiki/Front-end_web_development 'Front-end web development')的背景下，移动端开发（Android、IOS）将逐步退出历史舞台。
 
-[全栈工程师](%E6%98%AF%E6%8C%87%E6%8E%8C%E6%8F%A1%E5%A4%9A%E7%A7%8D%E6%8A%80%E8%83%BD%EF%BC%8C%E5%B9%B6%E8%83%BD%E5%88%A9%E7%94%A8%E5%A4%9A%E7%A7%8D%E6%8A%80%E8%83%BD%E7%8B%AC%E7%AB%8B%E5%AE%8C%E6%88%90%E4%BA%A7%E5%93%81%E7%9A%84%E4%BA%BA%E3%80%82 "什么是全栈工程师")在业务开发流程中起到了至关重要的作用。
+[全栈工程师](%E6%98%AF%E6%8C%87%E6%8E%8C%E6%8F%A1%E5%A4%9A%E7%A7%8D%E6%8A%80%E8%83%BD%EF%BC%8C%E5%B9%B6%E8%83%BD%E5%88%A9%E7%94%A8%E5%A4%9A%E7%A7%8D%E6%8A%80%E8%83%BD%E7%8B%AC%E7%AB%8B%E5%AE%8C%E6%88%90%E4%BA%A7%E5%93%81%E7%9A%84%E4%BA%BA%E3%80%82 '什么是全栈工程师')在业务开发流程中起到了至关重要的作用。
 
 脚注内容请拉到最下面观看。
 
@@ -194,18 +202,18 @@ yaml
 
 ```typescript
 interface AnimateLogoCloudProps {
- class?: string
- title?: string
- logos?: Logo[]
+	class?: string
+	title?: string
+	logos?: Logo[]
 }
 
 interface SphereIcon {
- x: number
- y: number
- z: number
- scale: number
- opacity: number
- id: number
+	x: number
+	y: number
+	z: number
+	scale: number
+	opacity: number
+	id: number
 }
 ```
 
@@ -293,8 +301,8 @@ Markdown Nice 这么好用，简直是{喜大普奔|hē hē hē hē}呀！
 
 ## 5 致谢
 
-- 歌词经理 [wechat-fromat](https://github.com/lyricat/wechat-format "灵感来源")
-- 颜家大少 [MD2All](http://md.aclickall.com/ "MdA2All")
+- 歌词经理 [wechat-fromat](https://github.com/lyricat/wechat-format '灵感来源')
+- 颜家大少 [MD2All](http://md.aclickall.com/ 'MdA2All')
 
 ## Footnotes
 
