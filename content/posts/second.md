@@ -2,6 +2,13 @@
 title: My Second Post
 description: This is an example of a blog post using Nuxt Content
 date: 2025-03-04
+image: https://images.pexels.com/photos/1050312/pexels-photo-1050312.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+minRead: 8
+author:
+  name: Emma Thompson
+  avatar:
+    src: https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+    alt: Emma Thompson
 ---
 
 # Welcome to My Second Post
@@ -38,8 +45,8 @@ Ready to start writing? Either start changing stuff on the left or
 | Tables        |      Are      |  Cool |
 | ------------- | :-----------: | ----: |
 | col 3 is      | right-aligned | $1600 |
-| col 2 is      |    centered   |   $12 |
-| zebra stripes |    are neat   |    $1 |
+| col 2 is      |   centered    |   $12 |
+| zebra stripes |   are neat    |    $1 |
 
 > Text that is a quote
 
@@ -81,7 +88,7 @@ First list item
 - 任务2
 
 | 功能 | 状态 |
-| -- | -- |
+| ---- | ---- |
 | 表格 | 正常 |
 
 [TOC]

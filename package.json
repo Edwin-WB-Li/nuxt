@@ -21,7 +21,9 @@
 		"@nuxt/ui": "^3.2.0",
 		"@nuxtjs/i18n": "^9.5.6",
 		"@vueuse/core": "^13.5.0",
+		"@vueuse/nuxt": "^13.5.0",
 		"better-sqlite3": "^12.2.0",
+		"dayjs-nuxt": "^2.1.11",
 		"motion-v": "^1.5.0",
 		"normalize.css": "^8.0.1",
 		"nprogress": "^0.2.0",
@@ -37,8 +39,7 @@
 		"remark-gfm": "^4.0.1",
 		"remark-toc": "^9.0.0",
 		"tailwindcss": "^4.1.11",
-		"vue": "^3.5.17",
-		"vue-router": "^4.5.1",
+		"vue": "^3.5.18",
 		"vue-use-spring": "^0.3.3"
 	},
 	"devDependencies": {

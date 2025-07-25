@@ -30,7 +30,9 @@ export default defineNuxtConfig({
 	modules: [
 		// '@nuxtjs/tailwindcss',
 		'@nuxt/eslint',
+		'@vueuse/nuxt',
 		'@nuxt/content',
+		// 'dayjs-nuxt',
 		'nuxt-umami',
 		'@nuxt/ui',
 		'@clerk/nuxt',
@@ -52,20 +54,6 @@ export default defineNuxtConfig({
 			link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
 		},
 	},
-	// umami: {
-	// 	// https://umami.nuxt.dev/getting-started/introduction
-	// 	id: '7e8c67ee-760d-4f16-a4c1-12f9ac0452f4',
-	// 	host: 'https://cloud.umami.is',
-	// 	autoTrack: true,
-	// 	// proxy: 'cloak',
-	// 	useDirective: true,
-	// 	domains: ['nuxt-blog.weiibn.shop'],
-	// 	ignoreLocalhost: true,
-	// 	// excludeQueryParams: false,
-	// 	// customEndpoint: '/my-custom-endpoint',
-	// 	// enabled: false,
-	// 	// logErrors: true,
-	// },
 	colorMode: {
 		// 根据系统设置自动切换
 		preference: 'light', // 可选 'light'/'dark'/'system'
@@ -162,7 +150,8 @@ export default defineNuxtConfig({
 			alias: {},
 		},
 		preview: {
-			api: 'https://nuxt-blog-studio.nuxt.space',
+			// api: 'https://nuxt-blog-studio.nuxt.space',
+			api: 'https://api.nuxt.studio',
 			dev: true,
 		},
 	},

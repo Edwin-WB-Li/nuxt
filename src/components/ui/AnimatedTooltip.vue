@@ -3,7 +3,7 @@
 		v-for="item in items"
 		:key="item.id"
 		class="group relative -mr-4"
-		@mouseenter="e => handleMouseEnter(e, item.id)"
+		@mouseenter="(e: MouseEvent) => handleMouseEnter(e, item.id)"
 		@mouseleave="hoveredIndex = null"
 		@mousemove="handleMouseMove"
 	>
