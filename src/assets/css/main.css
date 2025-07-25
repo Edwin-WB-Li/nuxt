@@ -3,6 +3,7 @@
 @import '@nuxt/ui';
 
 @custom-variant dark (&:is(.dark *));
+@plugin '@tailwindcss/typography';
 
 :root {
 	--card: oklch(1 0 0);

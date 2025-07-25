@@ -2,7 +2,11 @@
 	<div class="flex w-full items-center justify-center">
 		<!-- 渲染Markdown内容 -->
 		<template v-if="posts">
-			<ContentRenderer :value="posts" />
+			<article
+				class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl prose-indigo dark:prose-invert dark:prose-dark mx-auto"
+			>
+				<ContentRenderer :value="posts" />
+			</article>
 		</template>
 		<template v-else>
 			<div class="empty-page">

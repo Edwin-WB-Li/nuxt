@@ -68,8 +68,8 @@ export default defineNuxtConfig({
 		build: {
 			markdown: {
 				toc: {
-					depth: 4, // 包含h6级别的标题
-					searchDepth: 4, // 搜索嵌套标签的深度
+					depth: 5, // 包含h6级别的标题
+					searchDepth: 5, // 搜索嵌套标签的深度
 				},
 				// remarkPlugins: {
 				// 	'remark-emoji': {
@@ -115,9 +115,11 @@ export default defineNuxtConfig({
 					// 或者
 					theme: {
 						// 默认主题（同单一字符串）
-						default: 'github-light',
+						default: 'github-dark',
 						// `html.dark` 时使用的主题
-						dark: 'github-dark',
+						light: 'github-light',
+						// `html.sepia` 时使用的主题
+						sepia: 'monokai',
 					},
 
 					// 代码高亮配置
@@ -145,9 +147,9 @@ export default defineNuxtConfig({
 		},
 		renderer: {
 			// 为所有标题启用链接生成
-			anchorLinks: true,
+			// anchorLinks: true,
 			// 替换 markdown 组件，渲染自定义组件替代默认组件
-			alias: {},
+			// alias: {},
 		},
 		preview: {
 			// api: 'https://nuxt-blog-studio.nuxt.space',
